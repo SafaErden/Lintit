@@ -1,4 +1,14 @@
 #!/usr/bin/env ruby
-puts "Hello!"
-puts "World!"
-puts "executable!"
+require 'colorize'
+require './lib/test_case.rb'
+
+path=ARGV[0]
+test_case=TestCase.new(path)
+test_case.activate
+
+error_size=test_case.error_counter
+error_array=test_case.errors
+
+puts "#{error_array} errors hash".red
+puts "#{test_case.path} examined".yellow
+puts "#{error_size} errors found".red
