@@ -13,24 +13,22 @@ class TestCase
   end
 
   def fetch_file(path)
-    "result file from path: #{path}"
+    file = File.open(path)
+    file_data=file.readlines.map(&:chomp)
+    file.close
+    file_data
   end
 
   def activate
     file = fetch_file(@path)
+    process(indentation(file))
     process(line_length(file))
     process(trailing_white_space(file))
-    process(new_line(file))
     process(semi_colon(file))
-    process(space_operator(file))
     process(space_braces(file))
     process(space_after_bang(file))
     process(line_between_methods(file))
     process(several_lines(file))
-    process(empty_accessor(file))
-    process(space_equals(file))
-    process(snake_case(file))
-    process(camel_case(file))
     process(one_class(file))
   end
 
