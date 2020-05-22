@@ -93,11 +93,11 @@ In this case a sample file is created for the reviewers to check the code,
 
 Running the desired file without any additional argument will return the broken lines with line number and explanation,
 
-![screenshot](./Assets/img/first_call.PNG)
+![screenshot](./assets/first_call.PNG)
 
 At the end of each return, the user will be informed about the number of detected cases,
 
-![screenshot](./Assets/img/first_result.PNG)
+![screenshot](./assets/first_result.PNG)
 
 To fix the detected errors, add fix keyword after the filename
 
@@ -109,11 +109,11 @@ To fix the detected errors, add fix keyword after the filename
 
 Using fix command will fix the deetected cases and inform the user about progress with [CORRECTED] info,
 
-![screenshot](./Assets/img/fix.PNG)
+![screenshot](./assets/fix.PNG)
 
 In this case, user also will be informed about the total fixed cases,
 
-![screenshot](./Assets/img/fix_result.PNG)
+![screenshot](./assets/fix_result.PNG)
 
 <h2>Abilities</h2>
 
@@ -129,7 +129,7 @@ In this case, user also will be informed about the total fixed cases,
 
 6. Chceck and fix the spaces after bang : 'No space after !.
 
-7. Chceck and fix the spaces aruond braced : No spaces after (, [ or before ], ). Use spaces around { and before }.
+7. Chceck and fix the spaces aruond braces : No spaces after (, [ or before ], ). Use spaces around { and before }.
 
 8. Chceck and fix the white spaces : Avoid trailing whitespace.
 
