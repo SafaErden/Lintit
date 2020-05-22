@@ -1,4 +1,3 @@
-  
 def bubble_sort(arr)
   arr.each do
     i = 0
