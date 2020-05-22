@@ -41,7 +41,8 @@ class TestCase
 
   def activate(fix = false)
     file = fetch_file(@path)
-    return if file==nil
+    return if file.nil?
+
     file = process(indentation(file, fix), fix)
     file = process(line_length(file), false)
     file = process(trailing_white_space(file, fix), fix)

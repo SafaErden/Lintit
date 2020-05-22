@@ -1,3 +1,5 @@
+# rubocop:disable Naming/MethodParameterName
+
 module SpaceAfterBang
   def space_after_bang(file, fix, arr = [])
     info = 'No space after !.'
@@ -18,3 +20,4 @@ module SpaceAfterBang
     space_after_bang(file, true, arr)
   end
 end
+# rubocop:enable Naming/MethodParameterName

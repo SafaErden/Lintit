@@ -1,6 +1,8 @@
+# rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity/
+# rubocop:disable Naming/MethodParameterName
+
 module Indentation
   def indentation(file, fix, arr = [])
-  
     info = 'Use two spaces per indentation level (aka soft tabs).'
     file.each_with_index do |v, i|
       c1 = 0
@@ -24,3 +26,5 @@ module Indentation
     indentation(file, true, arr)
   end
 end
+# rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
+# rubocop:enable Naming/MethodParameterName

@@ -2,8 +2,6 @@
 require 'colorize'
 require './lib/test_case.rb'
 
-
-
 unless ARGV[0].nil?
   path = ARGV[0]
   puts path

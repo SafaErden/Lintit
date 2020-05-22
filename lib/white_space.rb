@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/CyclomaticComplexity/
 module WhiteSpace
   def trailing_white_space(file, fix, arr = [])
     info = 'Avoid trailing whitespace.'
@@ -30,3 +31,4 @@ module WhiteSpace
     trailing_white_space(file, true, arr)
   end
 end
+# rubocop:enable Metrics/CyclomaticComplexity/
