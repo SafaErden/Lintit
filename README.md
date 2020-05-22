@@ -141,9 +141,41 @@ end
 
 5. Check and fix the semi colon misusage : Don’t use ; to terminate statements and expressions.
 
+```
+
+# bad
+puts 'foobar'; # superfluous semicolon
+
+# good
+puts 'foobar'
+
+```
+
 6. Chceck and fix the spaces after bang : 'No space after !.
 
+```
+
+# bad
+! something
+
+# good
+!something
+
+```
+
 7. Chceck and fix the spaces aruond braces : No spaces after (, [ or before ], ). Use spaces around { and before }.
+
+```
+
+# bad
+some( arg ).other
+[ 1, 2, 3 ].each{|e| puts e}
+
+# good
+some(arg).other
+[1, 2, 3].each { |e| puts e }
+
+```
 
 8. Chceck and fix the white spaces : Avoid trailing whitespace.
 
