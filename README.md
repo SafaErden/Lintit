@@ -119,6 +119,20 @@ In this case, user also will be informed about the total fixed cases,
 
 1. Check and fix the indentation misusage : Use two spaces per indentation level (aka soft tabs).
 
+```
+
+ # bad - four spaces
+def some_method
+    do_something
+end
+
+# good
+def some_method
+  do_something
+end
+
+```
+
 2. Check and fix the line between methods : Use empty lines between method definitions and also to break up methods into logical paragraphs internally.
 
 3. Check the line length : Limit lines to 50 characters.
