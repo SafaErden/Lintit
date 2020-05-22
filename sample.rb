@@ -6,7 +6,7 @@ def bubble_sort(    arr)
 
 
     while i<arr.length-1
-           arr[ i], arr[i + 1] =   arr[ i + 1],    arr[i] if arr[i] > arr[i + 1]
+           arr[ i], arr[i + 1] =   arr[ i + 1],    arr[i ] if arr[i] > arr[i + 1]
       i += 1;
 
     end
@@ -20,6 +20,18 @@ def bubble_sort(    arr)
 
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
 def bubble_sort_by             (arr)
 a= { a:"a"}
   arr.each do
@@ -31,6 +43,22 @@ a= { a:"a"}
   end
   arr
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def sortit
 
   def another_def

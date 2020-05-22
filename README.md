@@ -15,13 +15,17 @@
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#installing">How to Install</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#built_using">How to Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#milestones">Milestones</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#author">Authors</a>
+<a href="#milestones">Abilities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
 </p>
 
 ## 🧐 About <a name = "about"></a>
 
 <h3 align="center"> This custom code linter is the Capstone Project for the Ruby Course. The main goal is to put into practice the main concepts of Object Oriented Programming. Particularly, classes and access to their attributes.</h3>
+
+<p align="center">
+[Description Video](https://www.loom.com/share/3376f5d490b34dabb99676334cdd0c7f)
+</p>
 
 <h2 align="center">How to Install</h2>
 
