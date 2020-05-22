@@ -1,5 +1,6 @@
 module OneClass
-  def one_class(file, arr = [])
+  def one_class(file)
+    arr = []
     info = 'Aim to have just a single class/module per source file.'
     val = []
     file.each_with_index do |v, i|

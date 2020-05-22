@@ -30,7 +30,6 @@ module SpaceBraces
         v.delete_at(i + 1)
         break
       elsif (i - 1).positive? && (c == ')' || c == ']') && v[i - 1] == ' '
-        p v[i - 1]
         v.delete_at(i - 1)
         break
       elsif i + 1 < v.size && c.match(/^(\{)$/) && v[i + 1] != ' '
@@ -45,7 +44,6 @@ module SpaceBraces
       end
     end
     file[i] = v.join('')
-    puts file[i]
     space_braces(file, true, arr)
   end
 end

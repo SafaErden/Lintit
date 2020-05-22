@@ -1,5 +1,6 @@
 module Indentation
   def indentation(file, fix, arr = [])
+  
     info = 'Use two spaces per indentation level (aka soft tabs).'
     file.each_with_index do |v, i|
       c1 = 0
