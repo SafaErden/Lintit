@@ -29,19 +29,17 @@ class TestCase
   end
 
   def fetch_file(path)
-    begin
-      file = File.open(path)
-      file_data = file.readlines.map(&:chomp)
-      file.close
-      file_data
-    rescue
-      puts "............................................"
-      puts
-      puts  "  I am sorry, I couldn't find the file. Consider that I am a dummy linter, not Google! So please give me a valid directory and filename that I can easily find.".blue
-      puts
-      puts "............................................"
-      exit
-    end
+    file = File.open(path)
+    file_data = file.readlines.map(&:chomp)
+    file.close
+    file_data
+  rescue StandardError
+    puts '............................................'
+    puts
+    puts "I am sorry, I couldn't find the file. Consider that I am a dummy linter, not Google!".blue
+    puts 'So please give me a valid directory and filename that I can easily find.'.blue
+    puts '............................................'
+    exit
   end
 
   def fix_file(path, data)
