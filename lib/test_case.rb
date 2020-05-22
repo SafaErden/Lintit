@@ -29,10 +29,19 @@ class TestCase
   end
 
   def fetch_file(path)
-    file = File.open(path)
-    file_data = file.readlines.map(&:chomp)
-    file.close
-    file_data
+    begin
+      file = File.open(path)
+      file_data = file.readlines.map(&:chomp)
+      file.close
+      file_data
+    rescue
+      puts "............................................"
+      puts
+      puts  "  I am sorry, I couldn't find the file. Consider that I am a dummy linter, not Google! So please give me a valid directory and filename that I can easily find.".blue
+      puts
+      puts "............................................"
+      exit
+    end
   end
 
   def fix_file(path, data)
