@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'colorize'
-require './lib/test_case.rb'
+require_relative '../lib/test_case'
 
 unless ARGV[0].nil?
   path = ARGV[0]
