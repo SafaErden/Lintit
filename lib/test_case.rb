@@ -1,12 +1,12 @@
-require './lib/indentation.rb'
-require './lib/line_length.rb'
-require './lib/white_space.rb'
-require './lib/semi_colon.rb'
-require './lib/space_braces.rb'
-require './lib/space_after_bang.rb'
-require './lib/line_between_methods.rb'
-require './lib/several_lines.rb'
-require './lib/one_class.rb'
+require_relative  'indentation'
+require_relative  'line_length'
+require_relative  'white_space'
+require_relative  'semi_colon'
+require_relative  'space_braces'
+require_relative  'space_after_bang'
+require_relative  'line_between_methods'
+require_relative  'several_lines'
+require_relative  'one_class'
 
 class TestCase
   include Indentation
