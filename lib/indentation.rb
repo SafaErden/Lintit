@@ -1,5 +1,4 @@
 # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity/
-# rubocop:disable Naming/MethodParameterName
 
 module Indentation
   def indentation(file, fix, arr = [])
@@ -27,4 +26,3 @@ module Indentation
   end
 end
 # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity
-# rubocop:enable Naming/MethodParameterName

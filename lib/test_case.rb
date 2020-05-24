@@ -1,12 +1,12 @@
-require_relative  'indentation'
-require_relative  'line_length'
-require_relative  'white_space'
-require_relative  'semi_colon'
-require_relative  'space_braces'
-require_relative  'space_after_bang'
-require_relative  'line_between_methods'
-require_relative  'several_lines'
-require_relative  'one_class'
+require_relative 'indentation'
+require_relative 'line_length'
+require_relative 'white_space'
+require_relative 'semi_colon'
+require_relative 'space_braces'
+require_relative 'space_after_bang'
+require_relative 'line_between_methods'
+require_relative 'several_lines'
+require_relative 'one_class'
 
 class TestCase
   include Indentation
