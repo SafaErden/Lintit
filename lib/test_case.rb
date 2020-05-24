@@ -30,44 +30,43 @@ class TestCase
 
   private
 
-    def fetch_file(path)
-      file = File.open(path)
-      file_data = file.readlines.map(&:chomp)
-      file.close
-      file_data
-    rescue StandardError
-      puts '............................................'
-      puts
-      puts "I am sorry, I couldn't find the file. Consider that I am a dummy linter, not Google!".blue
-      puts 'So please give me a valid directory and filename that I can easily find.'.blue
-      puts '............................................'
-      exit
-    end
+  def fetch_file(path)
+    file = File.open(path)
+    file_data = file.readlines.map(&:chomp)
+    file.close
+    file_data
+  rescue StandardError
+    exit
+  end
 
-    def fix_file(path, data)
-      File.open(path, 'w') { |file| file.puts data }
-    end
+  def fix_file(path, data)
+    File.open(path, 'w') { |file| file.puts data }
+  end
 
-    def activate(fix = false)
-      file = fetch_file(@path)
-      return if file.nil?
+  public
 
-      file = process(indentation(file, fix), fix)
-      file = process(line_length(file), false)
-      file = process(trailing_white_space(file, fix), fix)
-      file = process(semi_colon(file, fix), fix)
-      file = process(space_braces(file, fix), fix)
-      file = process(space_after_bang(file, fix), fix)
-      file = process(line_between_methods(file, fix), fix)
-      file = process(several_lines(file, fix), fix)
-      file = process(one_class(file), false)
-      fix_file(@path, file)
-    end
+  def activate(fix = false)
+    file = fetch_file(@path)
+    return if file.nil?
 
-    def process(arr, fix)
-      @error_counter += arr[0].size
-      @fix_counter += arr[0].size if fix
-      arr[0].each_with_index { |v, _i| @errors << v }
-      arr[-1]
-    end
+    file = process(indentation(file, fix), fix)
+    file = process(line_length(file), false)
+    file = process(trailing_white_space(file, fix), fix)
+    file = process(semi_colon(file, fix), fix)
+    file = process(space_braces(file, fix), fix)
+    file = process(space_after_bang(file, fix), fix)
+    file = process(line_between_methods(file, fix), fix)
+    file = process(several_lines(file, fix), fix)
+    file = process(one_class(file), false)
+    fix_file(@path, file)
+  end
+
+  private
+
+  def process(arr, fix)
+    @error_counter += arr[0].size
+    @fix_counter += arr[0].size if fix
+    arr[0].each_with_index { |v, _i| @errors << v }
+    arr[-1]
+  end
 end
