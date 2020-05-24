@@ -1,4 +1,4 @@
-require_relative 'space_braces'
+require_relative '../lib/space_braces'
 require 'tempfile'
 
 describe 'SpaceBraces' do

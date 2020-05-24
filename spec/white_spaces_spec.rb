@@ -1,4 +1,4 @@
-require_relative 'white_space'
+require_relative '../lib/white_space'
 require 'tempfile'
 
 describe 'WhiteSpace' do

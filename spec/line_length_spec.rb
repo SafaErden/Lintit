@@ -1,4 +1,4 @@
-require_relative 'line_length'
+require_relative '../lib/line_length'
 require 'tempfile'
 
 describe 'LineLength' do

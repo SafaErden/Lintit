@@ -1,4 +1,4 @@
-require_relative 'line_between_methods'
+require_relative '../lib/line_between_methods'
 require 'tempfile'
 
 describe 'Indentation' do

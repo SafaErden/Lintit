@@ -1,4 +1,4 @@
-require_relative 'several_lines'
+require_relative '../lib/several_lines'
 require 'tempfile'
 
 describe 'SeveralLines' do

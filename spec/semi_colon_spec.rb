@@ -1,4 +1,4 @@
-require_relative 'semi_colon'
+require_relative '../lib/semi_colon'
 require 'tempfile'
 
 describe 'SemiColon' do

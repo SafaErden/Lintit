@@ -1,4 +1,4 @@
-require_relative 'test_case'
+require_relative '../lib/test_case'
 require 'tempfile'
 
 describe 'TestCase' do
