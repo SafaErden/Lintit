@@ -1,5 +1,5 @@
-require 'space_braces'
-require 'tempfile'
+require_relative 'space_braces'
+require_relative 'tempfile'
 
 describe 'SpaceBraces' do
   let(:dummy_content) { ['( {}   ]'] }

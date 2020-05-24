@@ -1,5 +1,5 @@
-require 'line_between_methods'
-require 'tempfile'
+require_relative 'line_between_methods'
+require_relative 'tempfile'
 
 describe 'Indentation' do
   let(:dummy_content) { ['b', "\n", '             a'] }

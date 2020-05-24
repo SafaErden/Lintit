@@ -1,5 +1,4 @@
 # rubocop:disable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity/
-# rubocop:disable Naming/MethodParameterName
 # rubocop:disable Style/MultipleComparison
 # rubocop:disable Layout/LineLength
 # rubocop:disable Metrics/MethodLength
@@ -28,8 +27,8 @@ module SpaceBraces
     [arr, file]
   end
 
-  def fix_space_braces(file, j, arr)
-    v = file[j].split('')
+  def fix_space_braces(file, idx, arr)
+    v = file[idx].split('')
 
     v.each_with_index do |c, i|
       if i + 1 < v.size && (c == '(' || c == '[') && v[i + 1] == ' '
@@ -49,12 +48,11 @@ module SpaceBraces
         break
       end
     end
-    file[j] = v.join('')
+    file[idx] = v.join('')
     space_braces(file, true, arr)
   end
 end
 # rubocop:enable Metrics/PerceivedComplexity,Metrics/CyclomaticComplexity/
-# rubocop:enable Naming/MethodParameterName
 # rubocop:enable Style/MultipleComparison
 # rubocop:enable Layout/LineLength
 # rubocop:enable Metrics/MethodLength

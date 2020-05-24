@@ -16,12 +16,12 @@ module Indentation
     [arr, file]
   end
 
-  def indentation_fix(i, c1, c2, file, arr)
-    file[i + 1] = if c1 < c2
-                    ' ' * (c1 + 2) + file[i + 1].strip
-                  else
-                    ' ' * (c1 - 2) + file[i + 1].strip
-                  end
+  def indentation_fix(idx, c11, c21, file, arr)
+    file[idx + 1] = if c11 < c21
+                      ' ' * (c11 + 2) + file[idx + 1].strip
+                    else
+                      ' ' * (c11 - 2) + file[idx + 1].strip
+                    end
     indentation(file, true, arr)
   end
 end

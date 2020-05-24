@@ -1,5 +1,3 @@
-# rubocop:disable Naming/MethodParameterName
-
 module SeveralLines
   def several_lines(file, fix, arr = [])
     info = 'Don’t use several empty lines in a row.'
@@ -12,9 +10,8 @@ module SeveralLines
     [arr, file]
   end
 
-  def fix_several_lines(file, i, arr)
-    file.delete_at(i + 1)
+  def fix_several_lines(file, idx, arr)
+    file.delete_at(idx + 1)
     several_lines(file, true, arr)
   end
 end
-# rubocop:enable Naming/MethodParameterName

@@ -1,5 +1,5 @@
-require 'semi_colon'
-require 'tempfile'
+require_relative 'semi_colon'
+require_relative 'tempfile'
 
 describe 'SemiColon' do
   let(:dummy_content) { ['i=2;'] }

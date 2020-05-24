@@ -1,5 +1,5 @@
-require 'several_lines'
-require 'tempfile'
+require_relative 'several_lines'
+require_relative 'tempfile'
 
 describe 'SpaceAfterBang' do
   let(:dummy_content) { ['a!        '] }

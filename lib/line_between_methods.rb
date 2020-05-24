@@ -1,5 +1,3 @@
-# rubocop:disable Naming/MethodParameterName
-
 module LineBetweenMethods
   def line_between_methods(file, fix, arr = [])
     info = 'Use empty lines between method definitions and also to break up methods into logical paragraphs internally.'
@@ -12,9 +10,8 @@ module LineBetweenMethods
     [arr, file]
   end
 
-  def fix_line_between_methods(file, i, arr)
-    file.insert(i + 1, '')
+  def fix_line_between_methods(file, idx, arr)
+    file.insert(idx + 1, '')
     line_between_methods(file, true, arr)
   end
 end
-# rubocop:enable Naming/MethodParameterName
