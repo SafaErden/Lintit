@@ -1,5 +1,5 @@
 require_relative 'white_space'
-require_relative 'tempfile'
+require 'tempfile'
 
 describe 'WhiteSpace' do
   let(:dummy_content) { ['a   b c   d  e   f   g         h'] }
