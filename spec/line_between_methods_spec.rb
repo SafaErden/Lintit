@@ -1,5 +1,4 @@
 require_relative '../lib/line_between_methods'
-require 'tempfile'
 
 describe 'LineBetweenMethods' do
   let(:dummy_content) { ['end', 'def sortit'] }

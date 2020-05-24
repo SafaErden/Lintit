@@ -1,5 +1,4 @@
 require_relative '../lib/several_lines'
-require 'tempfile'
 
 describe 'SeveralLines' do
   let(:dummy_content) { ['a', '', '', '', '', '', 'b'] }

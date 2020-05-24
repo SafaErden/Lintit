@@ -1,5 +1,4 @@
 require_relative '../lib/line_length'
-require 'tempfile'
 
 describe 'LineLength' do
   let(:dummy_content) { ['end', 'def sortit'] }

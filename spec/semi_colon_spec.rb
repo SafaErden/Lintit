@@ -1,5 +1,4 @@
 require_relative '../lib/semi_colon'
-require 'tempfile'
 
 describe 'SemiColon' do
   let(:dummy_content) { ['i=2;'] }

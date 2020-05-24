@@ -1,5 +1,4 @@
 require_relative '../lib/test_case'
-require 'tempfile'
 
 describe 'TestCase' do
   let(:temp_file) { Tempfile.create { |f| f << "abc\n" } }

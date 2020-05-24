@@ -1,5 +1,4 @@
 require_relative '../lib/one_class'
-require 'tempfile'
 
 describe 'OneClass' do
   let(:dummy_content) { ['end', 'def sortit'] }

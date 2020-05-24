@@ -1,5 +1,4 @@
 require_relative '../lib/several_lines'
-require 'tempfile'
 
 describe 'SpaceAfterBang' do
   let(:dummy_content) { ['a!        '] }
