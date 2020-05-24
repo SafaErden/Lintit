@@ -54,17 +54,17 @@ describe 'TestCase' do
   describe '#fetch_file' do
     it 'should return the content of the given path file' do
       allow(test_case).to receive(:fetch_file).and_return('content')
-      expect(test_case.fetch_file(temp_file)).to eq('content')
+      expect(test_case.send(:fetch_file, temp_file)).to eq('content')
     end
   end
 
   describe '#fix_file' do
     it 'should accept two arguments' do
-      expect { test_case.fix_file(temp_file, 'new_content') }.to_not raise_error
+      expect { test_case.send(:fix_file, temp_file, 'new_content') }.to_not raise_error
     end
     it 'should replace the old content with the fixed content' do
-      expect { test_case.fix_file(temp_file, 'new_content') }.to_not raise_error
-      expect(test_case.fetch_file(temp_file)).to eq(['new_content'])
+      expect { test_case.send(:fix_file, temp_file, 'new_content') }.to_not raise_error
+      expect(test_case.send(:fetch_file, temp_file)).to eq(['new_content'])
     end
   end
 
@@ -78,17 +78,17 @@ describe 'TestCase' do
   describe '#process' do
     it 'should increment @error_counter' do
       test_case.instance_variable_set(:@error_counter, 5)
-      test_case.process([['a'], ['file_content']], false)
+      test_case.send(:process, [['a'], ['file_content']], false)
       expect(test_case.error_counter).to eq(6)
     end
     it 'should increment @fix_counter' do
       test_case.instance_variable_set(:@fix_counter, 5)
-      test_case.process([['a'], ['file_content']], true)
+      test_case.send(:process, [['a'], ['file_content']], true)
       expect(test_case.fix_counter).to eq(6)
     end
     it 'should update @errors' do
       test_case.instance_variable_set(:@errors, ['a'])
-      test_case.process([['a'], ['file_content']], true)
+      test_case.send(:process, [['a'], ['file_content']], true)
       expect(test_case.errors).to eq(%w[a a])
     end
   end
