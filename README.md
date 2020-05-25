@@ -111,7 +111,7 @@ To fix the detected errors, add fix keyword after the filename
 
 ```
 
-Using fix command will fix the deetected cases and inform the user about progress with [CORRECTED] info,
+Using fix command will fix the detected cases and inform the user about progress with [CORRECTED] info,
 
 ![screenshot](./assets/fix.PNG)
 
