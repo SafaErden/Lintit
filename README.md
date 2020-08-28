@@ -1,25 +1,6 @@
 <h3 align="center">Lintit - A Custom Linter developed in Ruby to check Ruby files</h3>
 
-<div align="center">
-
-[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/SafaErden/Lintit/issues)
-[![GitHub2 Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/SafaErden/Lintit/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![Made By](https://img.shields.io/badge/Made%20By-Safa%20Erden-brightgreen)](https://github.com/safaerden)
-
-</div>
-
----
-
-<p align="center">
-<a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#installing">How to Install</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#built_using">How to Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#milestones">Abilities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#author">Author</a>
-</p>
-
-## 🧐 About <a name = "about"></a>
+## About <a name = "about"></a>
 
 <h3 align="center"> This custom code linter is the Capstone Project for the Ruby Course. The main goal is to put into practice the main concepts of Object Oriented Programming. Particularly, classes and access to their attributes.</h3>
 
